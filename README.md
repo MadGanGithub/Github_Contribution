@@ -12,6 +12,17 @@ The **Open-Source Contributor Performance Analysis System** is a machine learnin
 - [License](#license)
 - [Contact](#contact)
 
+## Screenshots
+
+Front Page:
+![Front page](screenshots/three.jpg)
+
+Report Page:
+![Report Page](screenshots/one.jpg)
+
+Graph Page:
+![Graph page](screenshots/two.jpg)
+
 ## Features
 - **Data Collection**: Integrates with GitHub API to gather repository data such as commits, pull requests, issues, and comments.
 - **Feature Engineering**: Employs advanced techniques to extract meaningful features that reflect contributor performance.
