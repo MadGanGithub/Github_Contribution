@@ -18,9 +18,12 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
-
 urlpatterns = [
     path('', views.home, name='home'),
     path('display_csv/', views.display_csv, name='display_csv'),
     path('activity/', views.plot_total_activity_score, name='activity'),
+    path('model1/', views.classify_contribution_types_view, name='classify_contribution_types'),
+    path('model2/', views.predict_pull_request_acceptance_view, name='predict_pull_request_acceptance'),
+    path('model3/', views.estimate_task_completion_time_view, name='estimate_task_completion_time'),
+    path('model4/', views.identify_project_leaders_view, name='identify_project_leaders')
 ]
