@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Repositories</title>
+</head>
+<body>
+    <h1>Repositories in Organization</h1>
+    
+    <h2>Repositories</h2>
+    <ul>
+        {% for repo in repos %}
+            <li>{{ repo.name }} - Stars: {{ repo.stargazers_count }} - Forks: {{ repo.forks_count }}</li>
+        {% endfor %}
+    </ul>
+    
+    {% comment %} <a href="{% url 'repository-form' %}">Submit another</a> {% endcomment %}
+</body>
+</html>
